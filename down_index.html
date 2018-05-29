@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>下载中心</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            position: fixed;
+            top:0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 90px;
+            background-color: #334050;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h3 {
+            color: #333;
+            font-size: 24px;
+        }
+        h4 {
+            color: #0151e6;
+        }
+        main {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        @media screen and (max-width: 1920px) {
+            .main_wrap {
+                width: 63vw;
+                height: 83vh;
+                border-radius: 17px;
+                margin-top: 111px; 
+            }
+        }
+        @media screen and (max-width: 1582px) {
+            .main_wrap {
+                padding: 2em;
+                width: 100vw;
+                height: 83vh;
+                border-radius: 17px;
+                margin-top: 111px; 
+            }
+        }
+        @media screen and (max-width: 1023px) {
+            .main_wrap {
+                padding: 2em;
+                width: 80vw;
+                height: 83vh;
+                border-radius: 17px;
+                margin-top: 111px; 
+            }
+        }
+        @media screen and (max-width: 719px) {
+            .main_wrap {
+                width: 99vw;
+                height: 83vh;
+                border-radius: 17px;
+                margin-top: 111px; 
+            }
+        }
+        .main_wrap_title {
+            width: 100%;
+            height: 10%;
+            min-height: 77px;
+            color: #333;
+            margin-bottom: 14px;
+        }
+        .main_wrap_title> span {
+            color: #999;
+        }
+        .main_section> div {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 14px;
+        }
+        @media screen and (max-width: 511px) {
+            .main_section> div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 14px;
+            }
+            .main_section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .main_section span {
+                margin-bottom: 14px;
+                color: #333333;
+            }
+            .main_section> div> div> .shiyongshuoming {
+                height: 0;
+                margin-top: 0.1em;
+            }
+            .main_wrap_title {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 14px;
+            }
+            .main_wrap_title h3 {
+                margin-bottom: 14px;
+            }
+            main_wrap_title span {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            .main_section> div> div> div> span {
+                margin: 0;
+            }
+        }
+        .main_section span {
+            color: #333333;
+        }
+        .main_section> div> div {
+            display: flex;
+        }
+        @media screen and (max-width: 1920px) {
+            .main_section> div> div {
+                display: flex;
+            }
+        }
+        @media screen and (max-width: 1023px) {
+            .main_section> div> div {
+                display: flex;
+                flex-direction: column;
+            }
+            .main_section> div> div> div {
+                margin-bottom: 14px;
+            }
+        }
+        .main_section> div> div> div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 40px;
+            border: 1px solid #b2b2b2;
+            color: #999;
+            border-radius: 3px;
+            margin-left: 14px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 589px) {
+            .main_section> div> div> div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 310px;
+                height: 40px;
+                border: 1px solid #b2b2b2;
+                color: #999;
+                border-radius: 3px;
+                margin-left: 14px;
+                cursor: pointer;
+            }
+        }
+        .main_section> div> div> div:hover {
+            background-color: #005efe;
+            border: 1px solid #005efe;
+            color: #ffffff;
+        }
+        .main_section> div> div> div:hover span {
+            color: #ffffff;
+        }
+        .main_section> div> div> div> span {
+            color: #0052e6;
+        }
+        .main_section>div>div>.shiyongshuoming {
+            border: 0;
+            justify-content: flex-start;
+        }
+        .main_section>div>div>.shiyongshuoming:hover {
+            background-color: unset;
+            border: 0;
+        }
+        .owner> div> div> div> span{
+            color: #ff5263;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./assets/frontend/images/logo001.png"/>
+    </header>
+    <main>
+        <div class="main_wrap">
+            <div class="main_wrap_title">
+                <h3>下载中心</h3>
+                <br/>
+                <span>最新版本包括&nbsp;:&nbsp;cms2.0/css2.0/物业端app2.0/业主端2.0</span>
+            </div>
+            <div class="main_section_wrap">
+                <div class="main_section">
+                    <h4>物业端app下载</h4>
+                    <div>
+                        <span>宅司令（物业）2.0版本</span>
+                        <div>
+                            <div id="wuye_2_0_apk"><span>android</span>(点击下载)</div>
+                            <div d="wuye_2_0_ios"><span>ios</span>(请到appStore搜索该名称下载)</div>
+                        </div>
+                    </div>
+                    <div>
+                        <span>宅司令（物业）1.0版本</span>
+                        <div>
+                            <div id="wuye_1_0_apk"><span>android</span>(点击下载)</div>
+                            <div id="wuye_1_0_ios"><span>ios</span>(请到appStore搜索该名称下载)</div>
+                        </div>
+                    </div>
+                </div><br/>
+                <div class="main_section owner">
+                    <h4 style="color:#fd565e">业主端app下载</h4>
+                    <div>
+                        <span>宅司令（业主）2.0版本</span>
+                        <div>
+                            <div id="yezhu_2_0_apk"><span>android</span>(点击下载)</div>
+                            <div id="yezhu_2_0_ios"><span>ios</span>(请到appStore搜索该名称下载)</div>
+                        </div>
+                    </div>
+                    <div>
+                        <span>宅司令（业主）1.0版本</span>
+                        <div>
+                            <div id="yezhu_1_0_apk"><span>android</span>(点击下载)</div>
+                            <div id="yezhu_1_0_ios"><span>ios</span>(请到appStore搜索该名称下载)</div>
+                        </div>
+                    </div>
+                </div><br/>
+                <div class="main_section">
+                    <h4>PC端app下载</h4>
+                    <div>
+                        <span>客户端刷卡程序</span>
+                        <div>
+                            <div id="pc_ic_card_progra"><span>下载</span></div>
+                            <div class="shiyongshuoming"><a href="">使用说明</a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <span>服务器端音频转码程序</span>
+                        <div>
+                            <div><span>下载</span></div>
+                            <div class="shiyongshuoming"><a href="">使用说明</a></div>
+                        </div>
+                    </div>
+                </div><br/>
+                <div class="main_section">
+                    <h4>PC端系统入口</h4>
+                    <div>
+                        <span>cms2.0</span>
+                        <div>
+                            <div id="cms2_0_yanshirukou"><span>演示入口</span></div>
+                            <div id="cms2_0_xitongdenglu"><span>系统登录</span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <span>cms1.0</span>
+                        <div>
+                            <div><span>演示入口</span></div>
+                            <div><span>系统登录</span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <span>css2.0</span>
+                        <div>
+                            <div><span>演示入口</span></div>
+                            <div><span>系统登录</span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <span>css1.0</span>
+                        <div>
+                            <div><span>演示入口</span></div>
+                            <div><span>系统登录</span></div>
+                        </div>
+                    </div>
+                </div><br/>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        // 入口
+        var cms2_0_yanshirukou = document.getElementById("cms2_0_yanshirukou")
+        cms2_0_yanshirukou.onclick = function() {
+            window.open("http://139.224.191.27/cms2.0_dev")
+        }
+        var cms2_0_xitongdenglu = document.getElementById("cms2_0_xitongdenglu")
+        cms2_0_xitongdenglu.onclick = function() {
+            window.open("http://139.224.191.27/cms2.0")
+        }
+        // App
+        // app-物业
+        var wuye_2_0_apk = document.getElementById("wuye_2_0_apk")
+        wuye_2_0_apk.onclick = function() {
+            window.open("http://139.224.191.27/updateApp/android/product/com.chuanglgc.wuye.v2.apk")
+        }
+        var wuye_1_0_apk = document.getElementById("wuye_1_0_apk")
+        wuye_1_0_apk.onclick = function() {
+            window.open("http://139.224.191.27/updateApp/android/product/com.chuanglgc.wuye.v1.apk")
+        }
+        // app-业主
+        var yezhu_2_0_apk = document.getElementById("yezhu_2_0_apk")
+        yezhu_2_0_apk.onclick = function() {
+            window.open("http://139.224.191.27/updateApp/android/product/com.chuanglgc.yezhu.v2.apk")
+        }
+        var yezhu_1_0_apk = document.getElementById("yezhu_1_0_apk")
+        yezhu_1_0_apk.onclick = function() {
+            window.open("http://139.224.191.27/updateApp/android/product/com.chuanglgc.yezhu.v1.apk")
+        }
+        // PC
+        var pc_ic_card_progra = document.getElementById("pc_ic_card_progra")
+        pc_ic_card_progra.onclick = function() {
+            window.open("http://139.224.191.27/updateApp/pc/client.py3.zip")
+        }
+    </script>
+</body>
+</html>
